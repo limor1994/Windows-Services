@@ -1,0 +1,44 @@
+C:\Users\user\Desktop\ImageService-master\ImageService\bin\Debug\ImageService.exe.config
+C:\Users\user\Desktop\ImageService-master\ImageService\bin\Debug\ImageService.exe
+C:\Users\user\Desktop\ImageService-master\ImageService\bin\Debug\ImageService.pdb
+C:\Users\user\Desktop\ImageService-master\ImageService\obj\Debug\ImageService.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\ImageService-master\ImageService\obj\Debug\ImageService.ImageService.resources
+C:\Users\user\Desktop\ImageService-master\ImageService\obj\Debug\ImageService.ProjectInstaller.resources
+C:\Users\user\Desktop\ImageService-master\ImageService\obj\Debug\ImageService.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\ImageService-master\ImageService\obj\Debug\ImageService.exe
+C:\Users\user\Desktop\ImageService-master\ImageService\obj\Debug\ImageService.pdb
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\bin\Debug\ImageService.exe.config
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\bin\Debug\ImageService.exe
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\bin\Debug\ImageService.pdb
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\obj\Debug\ImageService.ImageService.resources
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\obj\Debug\ImageService.ProjectInstaller.resources
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\obj\Debug\ImageService.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\obj\Debug\ImageService.exe
+C:\Users\user\Desktop\ex1 להגיש\src\ImageService-master\ImageService\obj\Debug\ImageService.pdb
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\bin\Debug\ImageService.exe.config
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\bin\Debug\ImageService.exe
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\bin\Debug\ImageService.pdb
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.ImageService.resources
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.ProjectInstaller.resources
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.exe
+C:\Users\user\Desktop\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.pdb
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\bin\Debug\ImageService.exe.config
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\bin\Debug\ImageService.exe
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\bin\Debug\ImageService.pdb
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.csprojResolveAssemblyReference.cache
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.ImageService.resources
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.ProjectInstaller.resources
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.csproj.GenerateResource.cache
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.csproj.CoreCompileInputs.cache
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.exe
+C:\Users\oreli\Dropbox\Orel\University\Limor\Testing 15-4-18\newlimorex1\src\ImageService-master\ImageService\obj\Debug\ImageService.pdb
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\bin\Debug\ImageService.exe.config
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\bin\Debug\ImageService.exe
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\bin\Debug\ImageService.pdb
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\obj\Debug\ImageService.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\obj\Debug\ImageService.ImageService.resources
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\obj\Debug\ImageService.ProjectInstaller.resources
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\obj\Debug\ImageService.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\obj\Debug\ImageService.exe
+C:\Users\user\Desktop\submit\src\ImageService-master\ImageService\obj\Debug\ImageService.pdb
