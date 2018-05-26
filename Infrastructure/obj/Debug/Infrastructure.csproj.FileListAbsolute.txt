@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\Image service\ImageService-master\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\user\Desktop\Image service\ImageService-master\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\user\Desktop\Image service\ImageService-master\Infrastructure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Image service\ImageService-master\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Image service\ImageService-master\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\user\Desktop\Image service\ImageService-master\Infrastructure\obj\Debug\Infrastructure.pdb
