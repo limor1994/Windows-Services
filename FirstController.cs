@@ -1,0 +1,149 @@
+﻿using ImageService.Communication.Modal;
+using ImageService.Modal;
+using ImageService.Communication.Enums;
+using System.Collections.Generic;
+using System.Web.Mvc;
+using ImageServiceWeb.Models;
+
+
+namespace ImageServiceWeb.Controllers
+{
+
+    public class FirstController : Controller
+    {
+        // ClientWebSingleton client = ClientWebSingleton.getInstance();
+        static public List<Student> students = new List<Student>() { };
+        static Photo photo;
+        static ConfigModel config_Model = new ConfigModel();
+        static LogsModel log_Model = new LogsModel();
+        static PhotosModel photos_Model = new PhotosModel(config_Model.OutPutDir);
+
+        static ImageWebModel image_Web_Model = new ImageWebModel(photos_Model.numberOfPhoto);
+
+
+        // GET: First
+        public ActionResult Config()
+        {
+            return View(config_Model);
+        }
+
+
+        // GET: First
+        public ActionResult ImageWebModel()
+        {
+            image_Web_Model.NumOfPhotos = photos_Model.numberOfPhoto;
+            image_Web_Model.updateServiceStatus();
+            return View(image_Web_Model);
+        }
+
+
+        // GET: First
+        public ActionResult Logs()
+        {
+            return View(log_Model);
+        }
+
+
+        // GET: First
+        public ActionResult Photos()
+        {
+            if (config_Model.OutPutDir != null)
+            {
+                photos_Model.updatePhotoList();
+            }
+            return View(photos_Model);
+        }
+
+
+        // GET: First
+        public ActionResult RemoveHandler()
+        {
+            return View();
+        }
+        public ActionResult ViewPhoto(int id)
+        {
+            photo = GetPhotoByID(id);
+            return View(photo);
+        }
+
+        public ActionResult DeletePhoto(int id)
+        {
+            photo = GetPhotoByID(id);
+            return View(photo);
+        }
+
+
+        [HttpPost]
+        public void getLogsForType(string type)
+        {
+            MessageTypeEnum temp = MessageTypeEnum.FAIL;
+            switch (type.ToLower())
+            {
+                case "fail":
+                    temp = MessageTypeEnum.FAIL;
+                    break;
+                case "info":
+                    temp = MessageTypeEnum.INFO;
+
+                    break;
+                case "warning":
+                    temp = MessageTypeEnum.WARNING;
+                    break;
+                default:
+                    type = null;
+                    break;
+            }
+
+            log_Model.LogMessages.Clear();
+            foreach (Log log in log_Model.m_logs)
+            {
+                if (log.Type == temp || type == null)
+                {
+                    log_Model.LogMessages.Add(log);
+                }
+            }
+
+
+        }
+        public Photo GetPhotoByID(int id)
+        {
+            foreach (Photo photo in photos_Model.images)
+            {
+                if (photo.ID.Equals(id))
+                {
+                    return photo;
+                }
+            }
+            return null;
+        }
+
+        [HttpPost]
+        public void DeletePhotoMethod(int id)
+        {
+            photo = GetPhotoByID(id);
+            string path = photo.OriginalPath;
+            System.IO.File.Delete(photo.ObsolutePathNormal);
+            System.IO.File.Delete(photo.ObsolutePathThum);
+
+            photos_Model.images.Remove(photo);
+            image_Web_Model.NumOfPhotos--;
+
+
+        }
+
+
+        [HttpPost]
+        public void RemoveHandlerMethod(string pathOfHandlerToRemove)
+        {
+            //string temp = config_Model.HandlersArr[0];
+            //here we need to remove handler from the service
+            //if succsess remove from the model handllers list
+            //config_Model.HandlersArr.Remove(pathOfHandlerToRemove);
+            CommandReceivedEventArgs e = new CommandReceivedEventArgs((int)CommandEnum.RemoveHandler, null,
+                pathOfHandlerToRemove);
+            config_Model.WriteToClient(e);
+
+        }
+
+    }
+}

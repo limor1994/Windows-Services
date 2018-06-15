@@ -1,0 +1,68 @@
+﻿@model ImageServiceWeb.Models.PhotosModel
+@{
+    ViewBag.Title = "Photos";
+}
+
+
+<head>
+    <style>
+        h1 {
+            color: mediumspringgreen;
+            font-weight: bold;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+
+<h1>Photos</h1>
+<br />
+@if (Model.images != null)
+{
+    foreach (var item in Model.images)
+    {
+        <div>
+            <div class="col-sm-5 col-md-3">
+                <div class="thumbnail">
+
+                    <img src="@Url.Content(item.ThumbPath)" class="img-circle" alt="Cinque Terre">
+
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <div class="table table-striped-group">
+                            <hr />
+                            <p>
+                                @Html.LabelFor(m => item.Name, new { @class = "col-md-2 control-label" })
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                @Html.DisplayFor(modelItem => item.Name, new { @class = "col-md-2 control-label" })
+                            </p>
+                            <p>
+                                @Html.LabelFor(m => item.Year, new { @class = "col-md-2 control-label" })
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                @Html.DisplayFor(modelItem => item.Year, new { @class = "col-md-2 control-label" })
+                            </p>
+                            <p>
+                                @Html.LabelFor(m => item.Month, new { @class = "col-md-2 control-label" })
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                @Html.DisplayFor(modelItem => item.Month, new { @class = "col-md-2 control-label" })
+                            </p>
+                        </div>
+                        <p>
+
+                            @Html.ActionLink("View", "ViewPhoto", new { item.ID }, new { @class = "btn btn-info btn-lg" })
+                            @Html.ActionLink("Delete", "DeletePhoto", new { item.ID }, new { @class = "btn btn-danger btn-lg" })
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <br />
+            </div>
+        </div>
+    }
+}
